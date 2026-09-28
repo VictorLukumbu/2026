@@ -1,0 +1,206 @@
+/* HOME PAGE */
+
+/* sets default font, background color, and text color */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* styles the top bar with a fark background and white text */
+  header  {
+    background-color: #1e3d59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+/* ============================
+ Responsive Navigation
+============================= */
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: flex; /* Hidden by default on mobile */
+    
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  nav ul.show {
+    display: flex; /* Show when toggled */
+  }
+  
+  .menu-toggle {
+    display: block; /* Show toggle button on mobile */
+    margin: 10px auto;
+  
+  }
+  }
+  
+  /* Remove bullet points and spaces, aligns nav items horizontal */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Styles the nav links white, bold, no underline */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Adds a background image, padding, and centers text in the hero section. */
+  .hero {
+    background-size: cover;
+    min-height: 400px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Styles the bio section with padding white background, and rounded corners */
+  .bio {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  /* STYLE SHEET ABOUT IMAGE BACKGROUND */
+  image-grid {
+    display: flex; /* turns the container into a flexbox allowing images to align horizontaly*/
+    gap: 20px; /* Adds space between each image*/
+    flex-wrap: wrap;/* allow image to wrap to the next line if the screen is too narrow*/
+    justify-content: center; /* Centers the images horizontally in the container*/
+  }
+  
+  image-grid img {
+    width: 300px; /* sets a fixed wigth for each image*/
+    height: auto; /* keeps the image's aspect ratio intact*/
+    border-radius: 10px; /* rounds the corners for a smooth modern look*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);/* adds a soft shadow for depth - makes image pop*/
+    transition: transform 0.3s ease; /* prepares the image for smooth animation when hovered.*/
+  }
+  
+  image-grid img:hover{
+    transform: scale(1.05); /* slightly enlarges the image when hoved _ adds interactivity and flair*/
+  }
+  
+
+/* CONTACT  */
+
+
+  /* default */
+  contact {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* form input and form text area */
+  form input{
+    
+    width: 40%;
+    padding: 5px;
+    margin-top: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+  }
+
+  form textarea{
+    width: 40%;
+    padding: 70px;
+    margin-top: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+  }
+
+
+  /* form button */
+   form button{
+    background-color: #1e3d59;
+    color: white;
+    padding: 10px 20px;
+    border: 5px;
+    border-radius: pointer;
+   }
+
+   /* form button hover */
+   form button:hover{
+    background-color: #16324a;
+   }
+
+/* 🧠 Responsive message box styling */
+    #message {
+      width: 100%;               /* Full width on mobile */
+      min-height: 120px;         /* Taller box for typing */
+      padding: 12px;             /* Comfortable space inside */
+      font-size: 16px;           /* Readable text size */
+      border: 1px solid #ccc;    /* Soft border */
+      border-radius: 8px;        /* Rounded corners */
+      resize: vertical;          /* Allow vertical resizing */
+      box-sizing: border-box;    /* Prevent overflow issues */
+    }
+
+    /* 🧠 Optional: Responsive tweaks for small screens */
+    @media (max-width: 600px) {
+      #message {
+        min-height: 140px;
+        font-size: 18px;
+      }
+    }
+
+/* Default: hide hamburger and nav menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Mobile view: show hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+

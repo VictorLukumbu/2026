@@ -1,0 +1,63 @@
+
+  /* SOCIAL MEDIA */
+
+header{
+  background-color: #1e3d59;
+  /* background-image: url(/images/1755604271885.jpg); */
+}
+
+body{
+  background-image: url(/images/1755604271885.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+  /* Style for the social media section */
+  .social-media {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:none ;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Remove default list styling */
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style each list item */
+  .social-media li {
+    margin: 15px 0;
+  }
+  
+  /* Style the links */
+  .social-media a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0335ed;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    background-color: #aeb0b1;
+  }
+
+  body h1{
+    text-align: center;
+    color: aliceblue;
+    background-color: #1e3d59;
+  }
+  
+  /* Style the icons */
+  .social-media a i {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  /* Hover effect */
+  .social-media a:hover {
+    color: rgb(8, 23, 235);
+  }
+  

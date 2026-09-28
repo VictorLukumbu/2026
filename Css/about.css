@@ -1,0 +1,137 @@
+/* HOME PAGE */
+
+/* sets default font, background color, and text color */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(/images/dog.jpeg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    color: #333;
+  }
+
+
+  
+  /* styles the top bar with a fark background and white text */
+  header  {
+    background-image: url(../images/stad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: #1e3d59; */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Remove bullet points and spaces, aligns nav items horizontal
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  } */
+  
+  /* Styles the nav links white, bold, no underline
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  } */
+
+  /* a:hover{
+    background-color: #8d959d;
+    
+  } */
+
+  
+  image-grid img {
+    width: 300px; /* sets a fixed wigth for each image*/
+    height: auto; /* keeps the image's aspect ratio intact*/
+    border-radius: 10px; /* rounds the corners for a smooth modern look*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);/* adds a soft shadow for depth - makes image pop*/
+    transition: transform 0.3s ease; /* prepares the image for smooth animation when hovered.*/
+  }
+
+     
+   
+   /* ABOUT */
+
+
+
+   .about {
+    padding: 12px;
+    /* Adds space inside the section */
+  
+    
+    /* Sets background to white for clean look */
+    
+
+    margin: 10px;
+    /* Adds space around the section */
+    
+    border-radius: 8px;
+    /* Rounds the corners slightly for a soft design */
+  
+    text-align: justify;
+    max-width: 800px;
+    /* Limits the width so it doesn’t stretch too wide on large screens */
+  
+    margin-left: 10px;
+    
+    /* Centers the section horizontally */
+  
+    line-height: 1.6;
+    /* Increases line spacing for better readability */
+  }
+  
+  .about h2,
+  .about h3 {
+    color: #333;
+    /* Sets headings to a dark blue for emphasis */
+  }
+
+
+  
+  .about blockquote {
+    font-style: italic;
+    /* Makes the quote text italic for style */
+  
+    color: #555;
+    /* Sets quote text to a medium gray */
+  
+    border-left: 4px solid #1e3d59;
+    /* Adds a vertical blue line to the left of the quote */
+  
+    padding-left: 10px;
+    /* Adds space between the quote text and the border */
+  
+    margin: 34px 0;
+    /* Adds space above and below the quote */
+  }
+
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+.display-img{
+  height: 300px;
+}
+
+.pic-aca{
+  width: 200px;
+  height: px;
+}
+
+.fun{
+  height: 200px;
+}
+
+.ac-bench{
+  height: 200px;
+}

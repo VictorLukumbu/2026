@@ -1,0 +1,85 @@
+/* ============================
+   Base Styles
+============================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* ============================
+     Header and Hamburger Icon
+  ============================= */
+  header {
+    position: relative;
+    /* background-color: #07090b; */
+    padding: 10px;
+  }
+  
+  /* Hamburger icon styles */
+  .hamburger {
+    display: none;              /* Hidden by default (shown on mobile) */
+    font-size: 2rem;            /* Large icon size */
+    background: none;           /* No background */
+    border: none;               /* No border */
+    color: white;               /* White icon for contrast */
+    cursor: pointer;            /* Pointer cursor on hover */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  
+  /* ============================
+     Navigation Menu Styles
+  ============================= */
+  .nav-menu {
+    display: flex;              /* Horizontal layout by default */
+    justify-content: center; /* Align links to the center */
+    gap: 20px;                  /* Space between links */
+  }
+  
+  
+  
+  .nav-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #29333d;  /* Hover effect for links */
+  }
+  
+  
+  
+  /* ============================
+     Mobile View Styles
+  ============================= */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;           /* Show hamburger on small screens */
+    }
+  
+    .nav-menu {
+      display: none;            /* Hide menu by default */
+      flex-direction: column;  /* Stack links vertically */
+      position: absolute;
+      top: 50px;                /* Position below hamburger */
+      left: 10px;
+      background-color: #07090b;
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 999;
+    }
+  
+    .nav-menu.active {
+      display: flex;            /* Show menu when active */
+    }
+  
+    .nav-menu a {
+      text-align: left;         /* Align text to the left */
+    }
+  }
