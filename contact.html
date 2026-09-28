@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Victor</title>
+
+  <!-- Connects your custom CSS file -->
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <!-- Loads font awesome icons (for football, social media etc...) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Optional: Add internal CSS for quick testing or fallback -->
+</head>
+<body>
+
+  <!-- 🧠 Header with Victor's name and navigation menu -->
+  <header>
+    <!-- Hamburger Toggle Button (visible only on mobile) -->
+     <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+<!-- Navigation Menu -->
+    <nav id="mobileMenu" class="nav-menu">
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="social.html">Social Media</a>
+          <a href="profile_card.html">Profile</a>
+    </nav>
+    <h1>Contact 📞 Victor</h1>
+
+    <!-- 🧠 Navigation links to other pages -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🧠 Main content section -->
+  <main>
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>Want to connect with Victor? Send a message below:</p>
+
+      <!-- 🧠 Contact form using Formspree -->
+      <form action="https://formspree.io/f/xkgzekao" method="POST">
+        
+        <!-- 🧠 Name input -->
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <!-- 🧠 Email input -->
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- 🧠 Message box (updated for mobile usability) -->
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea><br /><br />
+
+        <!-- 🧠 Submit button -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- 🧠 Footer section -->
+  <footer>
+    <p>&copy; 2025 Victor Milamulo Lukumbu (Elisha) Football. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+  // 🧠 Toggles the 'active' class to show/hide menu
+  function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("active");
+  }
+  </script>
+</body>
+</html>
+
+
+
+
+

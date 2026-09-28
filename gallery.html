@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Declares the document as HTML5 -->
+<html lang="en">
+<!-- Sets the language to English -->
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensures proper character encoding -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Makes the page responsive on all devices -->
+
+  <title>Victor Milamulo Lukumbu | Gallery</title>
+  <!-- Sets the browser tab title -->
+
+  <link rel="stylesheet" href="css/gallery.css" />
+  <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Begins the visible content of the page -->
+
+  
+  <header>
+    <!-- Header section with Victor’s name and page title -->
+    <h1>Victor Milamulo Lukumbu</h1>
+    <p>Gallery of Victor’s football journey</p>
+
+    <!-- Navigation links to other pages (about, gallery, contact) -->
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="socialmedia.html">Media</a></li>
+          <li><a href="profile_card.html">Profile</a></li>
+          
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <!-- Main content area -->
+
+    <section class="gallery">
+      <!-- Gallery section -->
+
+      <h2>Victor in Action</h2>
+      <!-- Section heading -->
+
+      <div class="image-grid">
+        <!-- Container for image layout -->
+       
+        <!-- Image block with onclick to open lightbox -->
+    <figure>
+        <img src="images/vijanap.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+        <figcaption>The lineup 2023 <b>CS Vijana</b></figcaption>
+    </figure>
+
+
+
+    
+        <!-- Image block with onclick to open lightbox -->
+    <figure>
+          <img src="images/home vcoc.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+          <figcaption><b>VICTOR in a good mood</b></figcaption>
+    </figure>
+
+    
+        <!-- Image block with onclick to open lightbox -->
+  <figure>
+          <img src="images/eldop.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+          <figcaption><b>Cs Eldorado Bunia</b></figcaption>
+  </figure>
+
+
+    <figure>
+        <img src="images/lineupeldo.jpg" alt="lineup" onclick="openLightbox (this)">
+        <figcaption>The lineup against <b>Martin Pecheur</b></figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/kindia.jpg" alt="lineup" onclick="openLightbox (this)">
+      <figcaption><b>During a Training Match</b></figcaption>
+  </figure>
+
+    
+        <!-- Image block with onclick to open lightbox -->
+    <figure>
+          <img src="images/vijana2023.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+          <figcaption>The lineup 2023 <b>CS Vijana</b></figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/20240928_055923.jpg" alt="training" onclick="openLightbox(this)">
+      <figcaption>The training session</figcaption>
+    </figure>
+
+    
+        <!-- Image block with onclick to open lightbox -->
+      <figure>
+          <img src="images/00000IMG_00000_BURST20240428161228789_COVER.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+          <figcaption><b>In the village</b></figcaption>
+      </figure>
+  
+    
+        <!-- Image block with onclick to open lightbox -->
+      <figure>
+          <img src="images/eldovsmb.jpg" alt="Victor lineup" onclick="openLightbox(this)" />
+          <figcaption>The lineup<b>CS Eldorado</b></figcaption>
+      </figure>
+        <!-- Add more <figure> blocks as needed -->
+      </div>
+    </section>
+
+    <!-- Lightbox container (hidden by default) -->
+  <div id="lightbox" class="lightbox">
+    <!-- Image displayed in lightbox -->
+  <img src="" alt="Expanded view" id="lightbox-img" />
+  </div>
+  </main>
+
+  <footer>
+    <!-- Footer section -->
+    <p>&copy; 2025 Victor Milamulo Lukumbu. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // Opens the lightbox and sets the image source
+    function openLightbox(imgElement) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = imgElement.src;
+      lightbox.style.display = 'flex'; // Show the lightbox
+    }
+  
+    // Closes the lightbox when clicked
+    document.getElementById('lightbox').addEventListener('click', function () {
+      this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
