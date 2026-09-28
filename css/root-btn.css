@@ -1,0 +1,47 @@
+.btn{
+    text-align: center;
+    padding-top: 160px;
+    /* background: none; */
+    
+   
+}
+
+.clip {
+    background-color: rgb(1, 79, 35);
+    border: none;
+    border-radius: 7px;
+    
+}
+.clip a {
+    text-decoration: none;
+    
+    color: rgb(248, 246, 246);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 23px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    border: none;
+    
+
+}
+
+.training {
+    background-color: rgb(30, 30, 75);
+    border: none;
+    border-radius: 7px;
+    
+}
+.training a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(248, 246, 246);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 23px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    border: none;
+    
+
+}

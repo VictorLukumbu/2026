@@ -1,0 +1,18 @@
+header{
+    text-align: center;
+    background-color: rgb(19, 38, 32);
+    color: white;
+    margin-top: 0px;
+}
+
+.clip-video{
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.video{
+    width: 23px;
+}
+body{
+    background-color: rgb(49, 24, 24);
+}

@@ -1,0 +1,17 @@
+header{
+    text-align: center;
+    background-color: rgb(52, 71, 71);
+    background-image: url(/images/ag.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 156px;
+    height: 200px;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.welcome{
+    color: rgb(13, 31, 31);
+    font-size: 23px;
+    text-align: justify;
+}

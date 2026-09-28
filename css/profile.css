@@ -1,0 +1,170 @@
+
+
+/* ================================
+   Container: Overall Card Styling
+   ================================ */
+   .player-card {
+    background-color: #f0f0f0;         /* Light background for contrast */
+    border-radius: 12px;               /* Rounded corners for soft look */
+    padding: 1.5em;                    /* Inner spacing */
+    max-width: 400px;                 /* Limit width for readability */
+    margin: 2em auto;                 /* Center card with vertical spacing */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center;               /* Center-align text and content */
+    font-family: 'Segoe UI', sans-serif; /* Clean, modern font */
+  }
+  
+  /* ================================
+     Header: Flags and Position Tags
+     ================================ */
+  .card-header {
+    display: flex;                    /* Horizontal layout */
+    justify-content: center;         /* Center items horizontally */
+    align-items: center;             /* Align vertically */
+    gap: 1em;                         /* Space between flags and positions */
+    margin-bottom: 1em;              /* Space below header */
+  }
+  
+  /* Flag Images */
+  .flag {
+    width: 40px;                      /* Standard flag size */
+    height: auto;
+    border-radius: 4px;              /* Slight rounding for polish */
+    box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Soft glow */
+  }
+  
+  /* Position Labels */
+  .positions {
+    display: flex;                   /* Horizontal layout for positions */
+    gap: 0.5em;                      /* Space between each label */
+  }
+  
+  .pos {
+    background-color: #f1ecec;          /* Dark background */
+    color: #161515;                     /* White text */
+    padding: 0.3em 0.6em;            /* Inner spacing */
+    border-radius: 4px;              /* Rounded corners */
+    font-size: 0.9em;                /* Slightly smaller text */
+    font-weight: bold;
+  }
+  
+  /* ================================
+     Player Photo Styling
+     ================================ */
+  .photo-container {
+    margin-bottom: 1em;
+  }
+  
+  .player-photo {
+    width: 100%;                     /* Full width of container */
+    max-width: 180px;                /* Limit size */
+    border-radius: 23%;              /* Circular image */
+    object-fit: cover;               /* Crop image to fit container */
+    box-shadow: 0 0 8px rgba(0,0,0,0.2); /* Soft shadow */
+  }
+  
+  /* ================================
+     Player Name Styling
+     ================================ */
+  .player-name {
+    font-size: 1.4em;                /* Larger font for emphasis */
+    margin-bottom: 1em;
+    color: #efebeb;                     /* Dark gray for readability */
+  }
+  
+  /* ================================
+     Stats Table Styling
+     ================================ */
+  .stats-table {
+    width: 100%;                     /* Full width of card */
+    border-collapse: collapse;       /* Remove gaps between cells */
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    padding: 0.5em;                  /* Inner spacing */
+    border: 1px solid #ccc;          /* Light borders */
+    font-size: 0.95em;
+  }
+  
+  .stats-table th {
+    background-color: #ddd;          /* Light gray header */
+    font-weight: bold;
+  }
+  
+  .stats-table td {
+    background-color: #fff;          /* White background for values */
+  }
+  
+
+  /* ================================
+   Profile Card Container with Frame
+   ================================ */
+.player-card {
+  background-color: rgb(31, 31, 29);         /* Light background */
+  border: 3px solid #443a3a;            /* Solid frame around the card */
+  border-radius: 12px;               /* Rounded corners */
+  padding: 1.5em;                    /* Inner spacing */
+  max-width: 400px;                  /* Limit width */
+  margin: 2em auto;                  /* Center and space out */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  text-align: center;               /* Center-align content */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+  /* ================================
+   Career Timeline Table Styling
+   ================================ */
+   .career-section {
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 2em auto;
+  }
+  
+  .career-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    color: #333;
+  }
+  
+  /* Table Layout */
+  .career-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .career-table th,
+  .career-table td {
+    border: 1px solid #ccc;
+    padding: 0.75em;
+    text-align: left;
+    font-size: 1em;
+  }
+  
+  .career-table th {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .career-table td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 600px) {
+    .career-table th,
+    .career-table td {
+      font-size: 0.9em;
+      padding: 0.5em;
+    }
+  }
+  
